@@ -23,11 +23,8 @@
             <div class="flex justify-center items-center space-x-20">
                 <button type="submit"
                     class="bg-white text-green-950 py-1 px-4 text-xl font-semibold rounded-lg shadow-md border-2 border-gray-300 hover:bg-gray-300">
-                    Kirim Kode
+                    Submit
                 </button>
-                <a href="{{ route('login') }}" class="text-green-200 text-xl hover:underline">
-                    Kembali ke Login
-                </a>
             </div>
         </form>
         <div class="text-sm py-4 flex justify-center space-x-4 mt-20">

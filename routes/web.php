@@ -1,8 +1,12 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
 
+Route::get('/', function () {
+    return view('layouts.homepage');
+})->middleware(['auth', 'verified'])->name('home');
 
 Route::get('/', function () {
     return Auth::check()
@@ -16,5 +20,6 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
 
 require __DIR__.'/auth.php';

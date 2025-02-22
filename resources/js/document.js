@@ -46,8 +46,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const tanggalPengajuan = document.getElementById('tanggalPengajuan').value;
 
         function formatTanggal(tanggal) {
+            const namaBulan = [
+                "Januari", "Februari", "Maret", "April", "Mei", "Juni",
+                "Juli", "Agustus", "September", "Oktober", "November", "Desember"
+            ];
+        
             const [year, month, day] = tanggal.split('-');
-            return `${day}-${month}-${year}`;
+            return `${day} ${namaBulan[parseInt(month, 10) - 1]} ${year}`;
         }
 
         if (!nama || !tanggalLahir || !tempatLahir || !jenisKelamin || !tanggalPengajuan || !alamat || !namaUsaha || !jenisUsaha || !alamatUsaha) {
@@ -175,13 +180,23 @@ document.addEventListener('DOMContentLoaded', function() {
         const tanggalPengajuan = document.getElementById('tanggalPengajuanBayi').value;
 
         function formatTanggal(tanggal) {
+            const namaBulan = [
+                "Januari", "Februari", "Maret", "April", "Mei", "Juni",
+                "Juli", "Agustus", "September", "Oktober", "November", "Desember"
+            ];
+        
             const [year, month, day] = tanggal.split('-');
-            return `${day}-${month}-${year}`;
+            return `${day} ${namaBulan[parseInt(month, 10) - 1]} ${year}`;
         }
 
         // Validasi Input
         if (!nama || !tanggalLahir || !tempatLahir || !jenisKelamin || !namaAyah || !namaIbu || !anakKe || !tanggalPengajuan) {
-            alert('Harap isi semua kolom!');
+            Swal.fire({
+                title: 'Peringatan!',
+                text: 'Harap isi semua kolom!',
+                icon: 'warning',
+                confirmButtonText: 'OK'
+            });
             return;
         }
 
@@ -289,12 +304,22 @@ document.addEventListener('DOMContentLoaded', function() {
         const tanggalPengajuan = document.getElementById('tanggalPengajuanAhliWaris').value;
 
         function formatTanggal(tanggal) {
+            const namaBulan = [
+                "Januari", "Februari", "Maret", "April", "Mei", "Juni",
+                "Juli", "Agustus", "September", "Oktober", "November", "Desember"
+            ];
+        
             const [year, month, day] = tanggal.split('-');
-            return `${day}-${month}-${year}`;
+            return `${day} ${namaBulan[parseInt(month, 10) - 1]} ${year}`;
         }
 
         if (!nama || !tanggalLahir || !tempatLahir || !jenisKelamin || !namaAlmarhumAlmarhumah || !tahunMeninggalDunia || !tanggalPengajuan) {
-            alert('Harap isi semua kolom!');
+            Swal.fire({
+                title: 'Peringatan!',
+                text: 'Harap isi semua kolom!',
+                icon: 'warning',
+                confirmButtonText: 'OK'
+            });
             return;
         }
 
@@ -382,12 +407,22 @@ document.addEventListener('DOMContentLoaded', function() {
         const tanggalPengajuan = document.getElementById('tanggalPengajuanJandaDuda').value;
 
         function formatTanggal(tanggal) {
+            const namaBulan = [
+                "Januari", "Februari", "Maret", "April", "Mei", "Juni",
+                "Juli", "Agustus", "September", "Oktober", "November", "Desember"
+            ];
+        
             const [year, month, day] = tanggal.split('-');
-            return `${day}-${month}-${year}`;
+            return `${day} ${namaBulan[parseInt(month, 10) - 1]} ${year}`;
         }
 
         if (!nama || !tanggalLahir || !tempatLahir || !alamat || !namaAlmarhumAlmarhumah || !tahunMeninggalDunia || !tanggalPengajuan) {
-            alert('Harap isi semua kolom!');
+            Swal.fire({
+                title: 'Peringatan!',
+                text: 'Harap isi semua kolom!',
+                icon: 'warning',
+                confirmButtonText: 'OK'
+            });
             return;
         }
 
@@ -498,12 +533,22 @@ document.addEventListener('DOMContentLoaded', function() {
         const tanggalPengajuan = document.getElementById('tanggalPengajuanSKTM').value;
 
         function formatTanggal(tanggal) {
+            const namaBulan = [
+                "Januari", "Februari", "Maret", "April", "Mei", "Juni",
+                "Juli", "Agustus", "September", "Oktober", "November", "Desember"
+            ];
+        
             const [year, month, day] = tanggal.split('-');
-            return `${day}-${month}-${year}`;
+            return `${day} ${namaBulan[parseInt(month, 10) - 1]} ${year}`;
         }
 
         if (!nik || !nama || !tanggalLahir || !tempatLahir || !jenisKelamin || !pekerjaan || !agama || !alamat || !tanggalPengajuan) {
-            alert('Harap isi semua kolom!');
+            Swal.fire({
+                title: 'Peringatan!',
+                text: 'Harap isi semua kolom!',
+                icon: 'warning',
+                confirmButtonText: 'OK'
+            });
             return;
         }
 
@@ -617,12 +662,22 @@ document.addEventListener('DOMContentLoaded', function() {
         const tanggalPengajuan = document.getElementById('tanggalPengajuanSKK').value;
 
         function formatTanggal(tanggal) {
+            const namaBulan = [
+                "Januari", "Februari", "Maret", "April", "Mei", "Juni",
+                "Juli", "Agustus", "September", "Oktober", "November", "Desember"
+            ];
+        
             const [year, month, day] = tanggal.split('-');
-            return `${day}-${month}-${year}`;
+            return `${day} ${namaBulan[parseInt(month, 10) - 1]} ${year}`;
         }
 
         if (!nama || !tanggalLahir || !tempatLahir || !jenisKelamin || !pekerjaan || !agama || !alamat || !tahunMeninggalDunia || !penyebabKematian || !tempat || !tanggalPengajuan) {
-            alert('Harap isi semua kolom!');
+            Swal.fire({
+                title: 'Peringatan!',
+                text: 'Harap isi semua kolom!',
+                icon: 'warning',
+                confirmButtonText: 'OK'
+            });
             return;
         }
 
@@ -753,12 +808,22 @@ document.addEventListener('DOMContentLoaded', function() {
         const tanggalPengajuan = document.getElementById('tanggalPengajuanSKPP').value;
 
         function formatTanggal(tanggal) {
+            const namaBulan = [
+                "Januari", "Februari", "Maret", "April", "Mei", "Juni",
+                "Juli", "Agustus", "September", "Oktober", "November", "Desember"
+            ];
+        
             const [year, month, day] = tanggal.split('-');
-            return `${day}-${month}-${year}`;
+            return `${day} ${namaBulan[parseInt(month, 10) - 1]} ${year}`;
         }
 
         if (!nama || !tanggalLahir || !tempatLahir || !jenisKelamin || !pekerjaan || !agama || !alamatAsal || !statusKawin || !desa || !kecamatan || !kabupaten || !provinsi || !alasanPindah || !tanggalPengajuan) {
-            alert('Harap isi semua kolom!');
+            Swal.fire({
+                title: 'Peringatan!',
+                text: 'Harap isi semua kolom!',
+                icon: 'warning',
+                confirmButtonText: 'OK'
+            });
             return;
         }
 
@@ -900,12 +965,22 @@ document.addEventListener('DOMContentLoaded', function() {
         const tanggalPengajuan = document.getElementById('tanggalPengajuanSP').value;
 
         function formatTanggal(tanggal) {
+            const namaBulan = [
+                "Januari", "Februari", "Maret", "April", "Mei", "Juni",
+                "Juli", "Agustus", "September", "Oktober", "November", "Desember"
+            ];
+        
             const [year, month, day] = tanggal.split('-');
-            return `${day}-${month}-${year}`;
+            return `${day} ${namaBulan[parseInt(month, 10) - 1]} ${year}`;
         }
 
         if (!nik || !nama || !tanggalLahir || !tempatLahir || !jenisKelamin || !alamat || !statusKawin || !keperluan || !tanggalPengajuan) {
-            alert('Harap isi semua kolom!');
+            Swal.fire({
+                title: 'Peringatan!',
+                text: 'Harap isi semua kolom!',
+                icon: 'warning',
+                confirmButtonText: 'OK'
+            });
             return;
         }
 
@@ -1010,12 +1085,22 @@ document.addEventListener('DOMContentLoaded', function() {
         const tanggalPengajuan = document.getElementById('tanggalPengajuanSD').value;
 
         function formatTanggal(tanggal) {
+            const namaBulan = [
+                "Januari", "Februari", "Maret", "April", "Mei", "Juni",
+                "Juli", "Agustus", "September", "Oktober", "November", "Desember"
+            ];
+        
             const [year, month, day] = tanggal.split('-');
-            return `${day}-${month}-${year}`;
+            return `${day} ${namaBulan[parseInt(month, 10) - 1]} ${year}`;
         }
 
         if (!nama || !tanggalLahir || !tempatLahir || !statusKawin || !jenisKelamin || !agama || !alamat || !tanggalPengajuan) {
-            alert('Harap isi semua kolom!');
+            Swal.fire({
+                title: 'Peringatan!',
+                text: 'Harap isi semua kolom!',
+                icon: 'warning',
+                confirmButtonText: 'OK'
+            });
             return;
         }
 
