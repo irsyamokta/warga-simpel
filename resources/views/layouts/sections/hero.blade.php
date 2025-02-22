@@ -12,8 +12,9 @@
             </p>
             @auth
                 <a href="{{ route('pengajuan') }}"
-                    class="bg-white text-black font-bold text-lg py-4 px-8 rounded-lg border border-black shadow-md hover:shadow-lg hover:border-green-950 transition-all duration-300">
-                    Pengajuan Surat</a>
+                    class="bg-white text-black font-bold text-lg py-4 px-8 rounded-lg border border-black shadow-md hover:shadow-lg hover:bg-green-800 hover:border-green-950 hover:text-white transition-all duration-300">
+                    Pengajuan Surat
+                </a>
             @else
                 <a href="#" onclick="event.preventDefault(); showLoginAlert();"
                     class="bg-white text-black font-bold text-lg py-4 px-8 rounded-lg border border-black shadow-md hover:shadow-lg hover:bg-green-800 hover:border-green-950 hover:text-white transition-all duration-300">
