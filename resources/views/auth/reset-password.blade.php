@@ -14,10 +14,11 @@
             </div>
         @endif
 
-        <form method="POST" action="{{ route('password.update') }}">
+        <form method="POST" action="{{ route('password.store') }}">
             @csrf
+
             <input type="hidden" name="token" value="{{ request()->route('token') }}">
-            
+
             <div class="mb-4">
                 <input type="email" name="email" placeholder="Masukan Email"
                 class="w-full p-2 rounded border placeholder-gray-700 bg-green-200 border-black focus:ring-2 focus:ring-green-500 focus:outline-none"
@@ -43,7 +44,7 @@
                     <i id="eyeIconConfirm" class="fa-solid fa-eye-slash text-gray-700"></i>
                 </button>
             </div>
-            
+
             <div class="flex justify-center items-center space-x-10">
                 <button type="submit"
                     class="bg-white text-green-950 py-1 px-4 text-xl font-semibold rounded-lg shadow-md border-2 border-gray-300 hover:bg-gray-300">
@@ -53,7 +54,7 @@
             </div>
         </form>
 
-        <p class="text-green-200 flex justify-center text-sm mt-10">© 2025 WargaSimpel, Web. All rights reserved.</p>
+        <p class="text-green-200 flex justify-center text-sm mt-10">© {{ date('Y') }} WargaSimpel, Web. All rights reserved.</p>
     </div>
 </section>
 
