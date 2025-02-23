@@ -24,7 +24,7 @@
                     value="{{ old('email') }}">
             </div>
             <div class="mb-4">
-                <input type="text" name="name" placeholder="Nama Pengguna"
+                <input type="text" name="name" placeholder="Nama Lengkap"
                     class="w-full p-2 rounded border placeholder-gray-700 bg-green-200 border-black focus:ring-2 focus:ring-green-500 focus:outline-none"
                     value="{{ old('name') }}">
             </div>

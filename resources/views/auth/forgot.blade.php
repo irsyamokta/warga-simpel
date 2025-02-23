@@ -60,6 +60,6 @@
                 </div>
             </div>
         </div>
-        <p class="text-green-200 flex justify-center text-sm mt-10">© 2025 WargaSimpel, Web. All rights reserved.</p>
+        <p class="text-green-200 flex justify-center text-sm mt-10">© {{ date('Y') }} WargaSimpel, Web. All rights reserved.</p>
     </div>
 </section>
