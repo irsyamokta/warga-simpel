@@ -5,12 +5,18 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 
 Route::get('/', function () {
-    if (Auth::check() && Auth::user()->hasVerifiedEmail()) {
-        return view('layouts.homepage');
-    } elseif (Auth::check()) {
+    if (Auth::check()) {
+        if (session('password_reset')) {
+            session()->forget('password_reset');
+            return view('layouts.homepage');
+        }
+
+        if (Auth::user()->hasVerifiedEmail()) {
+            return view('layouts.homepage');
+        }
         return redirect()->route('verification.notice');
     }
-    return redirect()->route('login');
+    return view('layouts.homepage');
 })->name('home');
 
 Route::middleware('auth')->group(function () {
