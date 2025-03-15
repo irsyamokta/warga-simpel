@@ -26,6 +26,16 @@ Web saat ini masih dalam pengembangan (local)
 
 ## Preview
 
+![App Screenshot](https://github.com/irsyamokta/assets/blob/f5d448809ee856d75eb20b503c07800c81c9d82f/warga-simpel/1.png)
+
+![App Screenshot](https://github.com/irsyamokta/assets/blob/f5d448809ee856d75eb20b503c07800c81c9d82f/warga-simpel/2.png)
+
+![App Screenshot](https://github.com/irsyamokta/assets/blob/f5d448809ee856d75eb20b503c07800c81c9d82f/warga-simpel/3.png)
+
+![App Screenshot](https://github.com/irsyamokta/assets/blob/f5d448809ee856d75eb20b503c07800c81c9d82f/warga-simpel/4.png)
+
+![App Screenshot](https://github.com/irsyamokta/assets/blob/f5d448809ee856d75eb20b503c07800c81c9d82f/warga-simpel/6.png)
+
 ## Panduan Instalasi
 Ikuti langkah-langkah berikut untuk menginstal Warga Simpel di lokal Anda:
 <br>Nb. Pastikan lokal server Anda sudah berjalan, bisa menggunakan XAMPP, Laragon, atau sejenisnya.
